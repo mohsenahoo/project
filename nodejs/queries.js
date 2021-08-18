@@ -9,13 +9,13 @@ const db = pgp({
 });
 //connection test --------------------------------------------------------------
 
-/*db.one('INSERT INTO main.student(fname, susername) VALUES($1, $2) RETURNING fname', ['John', 'true'])
+db.one('INSERT INTO main.student(fname, susername) VALUES($1, $2) RETURNING fname', ['John', 'true'])
     .then(data => {
         console.log(data.fname); // print new user id;
     })
     .catch(error => {
         console.log('ERROR:', error); // print error;
-    });*/
+    });
 //-----------------------------------------------------------------------------
 
 //register as student---------------------------------------------------------------
